@@ -50,6 +50,10 @@
 }
 
 - (void)dealloc {
+    if (self.observer) {
+        [self.player removeTimeObserver:self.observer];
+        self.observer = nil;
+    }
     [self removeObserver:self forKeyPath:@"player.currentItem.status"];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
