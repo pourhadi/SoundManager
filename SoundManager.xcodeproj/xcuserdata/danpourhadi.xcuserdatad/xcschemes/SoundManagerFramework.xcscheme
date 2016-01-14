@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "44868F311C47DDD100DCB03D"
-               BuildableName = "SoundManager.framework"
-               BlueprintName = "SoundManager"
+               BlueprintIdentifier = "44868F1C1C47DD7200DCB03D"
+               BuildableName = "SoundManagerFramework.framework"
+               BlueprintName = "SoundManagerFramework"
                ReferencedContainer = "container:SoundManager.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "44868F311C47DDD100DCB03D"
-            BuildableName = "SoundManager.framework"
-            BlueprintName = "SoundManager"
+            BlueprintIdentifier = "44868F1C1C47DD7200DCB03D"
+            BuildableName = "SoundManagerFramework.framework"
+            BlueprintName = "SoundManagerFramework"
             ReferencedContainer = "container:SoundManager.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "44868F311C47DDD100DCB03D"
-            BuildableName = "SoundManager.framework"
-            BlueprintName = "SoundManager"
+            BlueprintIdentifier = "44868F1C1C47DD7200DCB03D"
+            BuildableName = "SoundManagerFramework.framework"
+            BlueprintName = "SoundManagerFramework"
             ReferencedContainer = "container:SoundManager.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -8,30 +8,31 @@
 
 #import <Foundation/Foundation.h>
 @class SMSoundManager;
+@class AVURLAsset;
 
-@protocol SMSoundManagerDelegate
+@protocol SMSoundManagerDelegate <NSObject>
 @optional
 - (void)soundManager:(SMSoundManager*)soundManager playStateChanged:(BOOL)playing;
-- (void)soundManager:(SMSoundManager *)soundManager elapsedTimeUpdated:(NSTimeInterval)elapsedTime;
+- (void)soundManager:(SMSoundManager *)soundManager elapsedTimeUpdated:(NSTimeInterval)elapsedTime; // is NOT delivered on the main queue
 - (void)soundManagerTrackFinishedPlaying:(SMSoundManager *)soundManager;
-- (void)soundManager:(SMSoundManager *)soundManager loadedTrackAtURL:(NSURL*)url title:(NSString*)title;
+- (void)soundManager:(SMSoundManager *)soundManager URLReadyToPlay:(NSURL*)url;
 - (void)soundManager:(SMSoundManager *)soundManager errorPlayingTrack:(NSError*)error;
 @end
 
 @interface SMSoundManager : NSObject
 
-+ (id)sharedInstance;
++ (SMSoundManager*)sharedInstance;
 @property (nonatomic, weak) id<SMSoundManagerDelegate> delegate;
 
 - (void)loadAudioAtURL:(NSURL*)url play:(BOOL)play;
+- (void)loadAsset:(AVURLAsset*)asset play:(BOOL)play;
 
 - (void)play;
 - (void)pause;
 
-@property (nonatomic, readonly, getter=isPlaying) BOOL playing;
-
-@property (nonatomic, readonly) NSTimeInterval elapsedTime;
-@property (nonatomic, readonly) NSTimeInterval trackDuration;
-@property (nonatomic, readonly) NSString *trackTitle;
+- (BOOL)isPlaying;
+- (NSURL*)url;
+- (NSTimeInterval)elapsedTime;
+- (NSTimeInterval)trackDuration;
 
 @end
