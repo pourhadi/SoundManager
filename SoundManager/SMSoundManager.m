@@ -55,6 +55,7 @@
         self.observer = nil;
     }
     [self removeObserver:self forKeyPath:@"player.currentItem.status"];
+    [self removeObserver:self forKeyPath:@"player.rate"];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
