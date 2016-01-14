@@ -10,8 +10,6 @@
 		44868E8E1C47779700DCB03D /* SoundManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 44868E8D1C47779700DCB03D /* SoundManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		44868E9D1C47784D00DCB03D /* SMSoundManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 44868E9B1C47784D00DCB03D /* SMSoundManager.h */; };
 		44868E9E1C47784D00DCB03D /* SMSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 44868E9C1C47784D00DCB03D /* SMSoundManager.m */; };
-		44868ED61C479D5D00DCB03D /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44868ED41C479D5D00DCB03D /* ReactiveCocoa.framework */; };
-		44868ED71C479D5D00DCB03D /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44868ED51C479D5D00DCB03D /* Result.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,8 +18,6 @@
 		44868E8F1C47779700DCB03D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44868E9B1C47784D00DCB03D /* SMSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSoundManager.h; sourceTree = "<group>"; };
 		44868E9C1C47784D00DCB03D /* SMSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSoundManager.m; sourceTree = "<group>"; };
-		44868ED41C479D5D00DCB03D /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
-		44868ED51C479D5D00DCB03D /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,8 +25,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44868ED61C479D5D00DCB03D /* ReactiveCocoa.framework in Frameworks */,
-				44868ED71C479D5D00DCB03D /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +34,6 @@
 		44868E801C47779700DCB03D = {
 			isa = PBXGroup;
 			children = (
-				44868ED41C479D5D00DCB03D /* ReactiveCocoa.framework */,
-				44868ED51C479D5D00DCB03D /* Result.framework */,
 				44868E8C1C47779700DCB03D /* SoundManager */,
 				44868E8B1C47779700DCB03D /* Products */,
 			);
